@@ -21,3 +21,16 @@ Bootstrapping is required.
 just moved the original main.ts content to the new file bootstrap.ts and update main.ts to:
 import('./bootstrap').catch((error) => console.error(error));
 
+### Angular upgrade from 12 to 14
+First upgrade the @angular-eslint/schematics package
+```
+ng update @angular-eslint/schematics@14
+```
+
+Upgrade Angular
+```
+ng update @angular/core@14 @angular/cli@14
+```
+
+@angular-eslint/schematics - Schematics which are used to add and update configuration files which are relevant for running ESLint on an Angular workspace.
+
